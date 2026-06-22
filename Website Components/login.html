@@ -2,11 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NetBook</title>
         <link rel="icon" type="image/x-ico" href="images/favicon.ico">
-        <link manifest="manifest" href="images/site.webmanifest">
+        <link manifest="manifest" href="site.webmanifest">
         <meta name="theme-color" content="0070f3">
+        <link rel="stylesheet" href="styles/loginstyle.css">
     </head>
     <body>
         <!--LOGIN CARD-->
@@ -15,8 +16,12 @@
                 <h2>Welcome to NetBook</h2>
             </div>
             
-            <form>
-                <input type="text">
+            <form class="login-form" id="login-form">
+                <div class="input-group">
+                <input type="text" id="name" placeholder="ex. John Doe" maxlength="20">
+                <input type="password" id="password" placeholder="Password" maxlength="18">
+                <button type="submit" " id="button1">LOG IN</button>
+                </div>
             </form>
 
         </div>
