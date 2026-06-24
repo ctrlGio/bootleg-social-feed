@@ -6,7 +6,7 @@
         <title>NetBook</title>
         <link rel="icon" type="image/x-ico" href="images/favicon.ico">
         <link manifest="manifest" href="site.webmanifest">
-        <meta name="theme-color" content="0070f3">
+        <meta name="theme-color" content="#0070f3">
         <link rel="stylesheet" href="styles/loginstyle.css">
     </head>
     <body>
@@ -18,9 +18,11 @@
             
             <form class="login-form" id="login-form">
                 <div class="input-group">
-                <input type="text" id="name" placeholder="ex. John Doe" maxlength="20">
-                <input type="password" id="password" placeholder="Password" maxlength="18">
-                <button type="submit" " id="button1">LOG IN</button>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="username" placeholder="ex. John Doe" maxlength="20">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" maxlength="18" >
+                <button type="submit"  id="button">LOG IN</button>
                 </div>
             </form>
 
