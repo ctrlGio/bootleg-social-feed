@@ -18,11 +18,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    const loggedInUser = localStorage.getItem("currentUsername") || "Guest User";
 
-    const userDisplay = document.getElementById("user-display");
-    const savedName = localStorage.getItem("currentUsername");
-
-    if (savedName && userDisplay) {
-        userDisplay.textContent = savedName;
+    const navbarDisplay = document.getElementById("user-display");
+    if (navbarDisplay) {
+        navbarDisplay.textContent = loggedInUser;
     }
+
+    const profileHeading = document.getElementById("main-user-heading");
+    if (profileHeading) {
+        profileHeading.textContent = loggedInUser;
+    }
+
+    const namePlaceholders = document.querySelectorAll(".name-placeholder");
+    namePlaceholders.forEach(element => {
+        element.textContent = loggedInUser;
+    });
 });

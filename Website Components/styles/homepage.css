@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucia Grande', 'Lucia Sans Unicode', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #edf0fe;
+    display: flex;
+
+}
+
+.navbar {
+    background-color: #3b5998;
+    color: #ffffff;
+}
