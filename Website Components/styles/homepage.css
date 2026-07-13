@@ -8,10 +8,82 @@
 body {
     background-color: #edf0fe;
     display: flex;
-
+    min-height: 100vh;
+    flex-direction: column;
 }
+
+/* TASKBAR AT THE TOP */
 
 .navbar {
     background-color: #3b5998;
     color: #ffffff;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: sticky; /* Fixed navbar */
+    top: 0;
+    z-index: 1000;
 }
+
+.navbar .nav-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
+}
+
+.navbar .nav-utilities {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .user-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.navbar li {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    text-decoration: underline;
+}
+
+a {
+    outline: none;
+    color: inherit;
+    border: none;
+    text-decoration: none;
+}
+
+.search-form{
+    display: flex;
+    gap: 6px;
+}
+
+.search-form input {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 1px solid;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    color: #3b5998;
+    cursor: pointer;
+}
+
+/* END */
