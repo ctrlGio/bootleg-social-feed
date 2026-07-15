@@ -39,6 +39,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 #main-user-heading {
@@ -245,4 +251,82 @@ a {
     height:auto;
     display: block;
     border: 1px solid;
+}
+
+/* wall post */
+
+.wall-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.wall-post {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.post-header {
+    font-size: 11px;
+    color: #777777;
+}
+
+.poster {
+    font-weight: bold;
+    color: #3b5998;
+    font-size: 15px;
+}
+
+.post-author:hover{
+    text-decoration: underline;
+}
+
+.post-action {
+    color: #555555;
+    margin: 0 4px;
+}
+
+.post-content {
+    font-size: 13px;
+    color: #111111;
+    line-height: 1.4;
+}
+
+.post-footer {
+    font-size: 11px;
+    color: #777777;
+    margin-top: 4px;
+}
+
+.post-footer a {
+    color:#3b5998;
+    font-weight: 500;
+}
+
+.post-footer a:hover {
+    text-decoration: underline;
+}
+
+.post-image-box {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border: 1px solid;
+    border-radius: 3px;
+    overflow:hidden;
+    max-width: 100%;
+}
+
+.post-image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
