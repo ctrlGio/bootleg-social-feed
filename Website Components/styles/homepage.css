@@ -228,3 +228,21 @@ a {
    text-decoration: underline;
    cursor: pointer;
 }
+
+/*profile pic*/
+
+.profile-pic-box {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic-box img {
+    width: 100%;
+    height:auto;
+    display: block;
+    border: 1px solid;
+}
