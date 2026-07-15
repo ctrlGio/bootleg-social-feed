@@ -19,7 +19,7 @@ body {
     max-width: 1200px;
     margin: 0 auto; 
     padding: 16px;     
-    gap: 24px
+    gap: 24px;
 }
 
 .main-content {
@@ -28,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: stretch;
 }
 
 .sidebar {
@@ -193,20 +194,20 @@ a {
 }
 
 
-
-
 /* WEBSITE POST ETC */
 
 .profile-nav {
     background-color: rgb(219, 219, 219);
     border: 1px solid;
     border-radius: 4px;
-    padding: 8px 16px;
-    max-width: 600px;
-    margin: 20px auto;
-    height: 100%;
+    padding: 16px;
+    
+    width: 100%;
     flex-grow: 1;
+
+    margin-top: 8px;
     margin-bottom: 8px;
+
     display: flex;
     flex-direction: column;
     
@@ -216,7 +217,7 @@ a {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    gap: 14px;
+    gap: 100px;
     padding-bottom: 12px;
     border-bottom: 1px solid;
     margin-bottom: 16px;
