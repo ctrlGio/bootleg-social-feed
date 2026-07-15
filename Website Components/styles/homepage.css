@@ -14,7 +14,7 @@ body {
 
 .container {
     display: flex;
-    height: calc(100vh - 65px); 
+    min-height: calc(100vh - 65px); 
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; 
@@ -23,7 +23,7 @@ body {
 }
 
 .main-content {
-    order: 1;
+    order: 0;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -34,13 +34,11 @@ body {
 .sidebar {
     order: -1;
     width: 250px;
-    height: 100%;
+    height: auto;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -329,4 +327,34 @@ a {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* adss */
+
+.right-sidebar {
+    order: 1;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.ad-box {
+    background-color: #ffffff;
+    border: 1px solid #ced0d4;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ad-label {
+    font-size: 9px;
+    font-weight: bold;
+    color: #90949c;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
